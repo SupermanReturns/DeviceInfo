@@ -23,7 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.infoCellArr = [NSArray arrayWithObjects:@"获取IDFV",@"获取IDFA",@"获取IMEI",@"获取MAC",@"获取UUID",@"获取UDID", nil];
     [self.view addSubview:self.infoTableView];
     
