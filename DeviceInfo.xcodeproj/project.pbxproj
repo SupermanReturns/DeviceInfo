@@ -15,6 +15,7 @@
 		CF2FAD582101D590002971DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAD572101D590002971DB /* main.m */; };
 		CF2FAD622101D590002971DB /* DeviceInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAD612101D590002971DB /* DeviceInfoTests.m */; };
 		CF2FAD6D2101D590002971DB /* DeviceInfoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAD6C2101D590002971DB /* DeviceInfoUITests.m */; };
+		CF2FAD7C2101D960002971DB /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAD7B2101D960002971DB /* DeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CF2FAD682101D590002971DB /* DeviceInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2FAD6C2101D590002971DB /* DeviceInfoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoUITests.m; sourceTree = "<group>"; };
 		CF2FAD6E2101D590002971DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2FAD7A2101D960002971DB /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		CF2FAD7B2101D960002971DB /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				CF2FAD492101D58E002971DB /* AppDelegate.m */,
 				CF2FAD4B2101D58E002971DB /* ViewController.h */,
 				CF2FAD4C2101D58E002971DB /* ViewController.m */,
+				CF2FAD7A2101D960002971DB /* DeviceInfo.h */,
+				CF2FAD7B2101D960002971DB /* DeviceInfo.m */,
 				CF2FAD4E2101D58E002971DB /* Main.storyboard */,
 				CF2FAD512101D590002971DB /* Assets.xcassets */,
 				CF2FAD532101D590002971DB /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 				CF2FAD4D2101D58E002971DB /* ViewController.m in Sources */,
 				CF2FAD582101D590002971DB /* main.m in Sources */,
 				CF2FAD4A2101D58E002971DB /* AppDelegate.m in Sources */,
+				CF2FAD7C2101D960002971DB /* DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,14 +440,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = DeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.DeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,14 +458,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = DeviceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.DeviceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
